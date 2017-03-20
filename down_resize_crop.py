@@ -27,6 +27,7 @@ shoe_list = os.listdir("."+shoe_dir)
 
 os.mkdir("./bags")
 os.mkdir("./shoes")
+os.mkdir("./result")
 
 for i in bag_list:
 	image = Image.open(cwd+bag_dir+i)
