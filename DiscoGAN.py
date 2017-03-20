@@ -38,6 +38,8 @@ batch_bags = tf.train.shuffle_batch([bags_image],
                                     min_after_dequeue=min_queue_examples)
 
 
+# Functions for training
+
 def lrelu(x, leak=0.2, name="lrelu"):
     with tf.variable_scope(name):
         f1 = 0.5 * (1 + leak)
@@ -211,6 +213,8 @@ disc_b_loss = tf.reduce_sum(tf.square(disc_b_real-1) + tf.square(disc_b_fake))/2
 
 gen_loss = const_loss_s + const_loss_b + gen_s_loss + gen_b_loss
 disc_loss = disc_s_loss + disc_b_loss
+
+# Compute & Apply gradients
 
 gen_sb_variables = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="generator_sb")
 gen_bs_variables = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope="generator_bs")
