@@ -41,8 +41,8 @@ for i in shoe_list:
 	image = image.crop([64,0,128,64])
 	image.save("./shoes/"+i)
 
-shutil.rmtree("./edges2handbags")
-shutil.rmtree("./edges2shoes")
+#shutil.rmtree("./edges2handbags")
+#shutil.rmtree("./edges2shoes")
 
 os.remove('./edges2handbags.tar.gz')
 os.remove('./edges2shoes.tar.gz')
