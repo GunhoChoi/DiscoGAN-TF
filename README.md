@@ -19,11 +19,11 @@ cd DiscoGAN_TF
 
 ## Download Image
 ~~~
-python3 ./down_resize_crop.py
+python3 down_resize_crop.py
 ~~~
 ## Train Model
 ~~~
-python3 ./DiscoGAN.py
+python3 DiscoGAN.py
 ~~~
 ## Result
 
