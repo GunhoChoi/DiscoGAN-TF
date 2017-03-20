@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Hyperparameters
 
 initializer = tf.truncated_normal_initializer(stddev=0.02)
-learning_rate = 0.0002
+learning_rate = 0.001
 batch_size = 256
 epoch = 100000
 
@@ -244,7 +244,7 @@ with tf.Session() as sess:
     
     for i in range(epoch):
         
-        for j in range(5):
+        for j in range(4):
                 _ = sess.run([update_G])
         
         _, _, g_loss, d_loss, reconed_b, reconed_s, fake_s, fake_b,s_image, b_image  = sess.run([update_G,update_D, 
