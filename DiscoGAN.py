@@ -243,11 +243,8 @@ with tf.Session() as sess:
     threads = tf.train.start_queue_runners(coord=coord)
     
     for i in range(epoch):
-	
         for j in range(5):
-            
                 _ = sess.run([update_G])
-    
         _, _, g_loss, d_loss, reconed_b, reconed_s, fake_s, fake_b,s_image, b_image  = sess.run([update_G,update_D, 
                                                                                                 gen_loss, disc_loss,
                                                                                                 recon_b,recon_s,
