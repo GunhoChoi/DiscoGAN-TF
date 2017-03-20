@@ -2,7 +2,7 @@
 
 Tensorflow implementation of [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)
 
-<img src="./image/discogan.png" width="60%">
+<img src="./assets/discogan.png" width="60%">
 
 ## Requirements
 
