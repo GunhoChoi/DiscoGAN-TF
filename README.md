@@ -14,7 +14,7 @@ Implementation of [Learning to Discover Cross-Domain Relations with Generative A
 ## Download code
 ~~~~
 git clone https://github.com/GunhoChoi/DiscoGAN_TF.git
-cd ./DiscoGAN_TF
+cd DiscoGAN_TF
 ~~~~~
 
 ## Download Image
