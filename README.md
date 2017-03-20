@@ -2,8 +2,6 @@
 
 Tensorflow implementation of [Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://arxiv.org/abs/1703.05192)
 
-with handbags and shoes image from [Berkely](https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets)
-
 <img src="./image/discogan.jpg" width="60%">
 
 ## Requirements
