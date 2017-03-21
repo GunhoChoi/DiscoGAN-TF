@@ -28,3 +28,8 @@ python3 DiscoGAN.py
 ## Result
 
  under training..
+ 
+### Links
+
+   - Official PyTorch implementation (https://github.com/SKTBrain/DiscoGAN)
+   - Carpedm20's PyTorch implementation (https://github.com/carpedm20/DiscoGAN-pytorch)
