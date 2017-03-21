@@ -205,6 +205,8 @@ disc_b_real = discriminator_bags(batch_bags,reuse=True)
 const_loss_s = tf.reduce_sum(tf.losses.mean_squared_error(batch_shoes,recon_s))
 const_loss_b = tf.reduce_sum(tf.losses.mean_squared_error(batch_bags,recon_b))
 
+# Instead of cross entropy loss used in paper, I've used LSGAN loss for experiment 
+
 gen_s_loss = tf.reduce_sum(tf.square(disc_s_fake-1))/2
 gen_b_loss = tf.reduce_sum(tf.square(disc_b_fake-1))/2
 
