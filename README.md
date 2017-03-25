@@ -29,6 +29,11 @@ python3 DiscoGAN.py
 
  under training..
  
+## Insight
+
+In order to get better results, the generator needs to be smarter than discriminator.
+Also, greater latent size of generator is required in order to get better generated images.
+
 ### Links
 
    - Official PyTorch implementation (https://github.com/SKTBrain/DiscoGAN)
