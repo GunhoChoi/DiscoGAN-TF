@@ -7,6 +7,7 @@ initializer = tf.truncated_normal_initializer(stddev=0.02)
 learning_rate = 0.0002
 batch_size = 256
 epoch = 100000
+lambda = 10
 
 # Read image files
 
@@ -213,7 +214,7 @@ gen_b_loss = tf.reduce_sum(tf.square(disc_b_fake-1))/2
 disc_s_loss = tf.reduce_sum(tf.square(disc_s_real-1) + tf.square(disc_s_fake))/2
 disc_b_loss = tf.reduce_sum(tf.square(disc_b_real-1) + tf.square(disc_b_fake))/2
 
-gen_loss = const_loss_s + const_loss_b + gen_s_loss + gen_b_loss
+gen_loss = lambda * (const_loss_s + const_loss_b) + gen_s_loss + gen_b_loss
 disc_loss = disc_s_loss + disc_b_loss
 
 # Compute & Apply gradients
